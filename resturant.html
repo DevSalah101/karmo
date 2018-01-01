@@ -1,0 +1,96 @@
+---
+layout: default
+permalink: /resturant/
+---
+<header id="resturant">
+	<div class="header-overlay">
+		<div class="container">
+			{% include navbar.html %}
+			<div class="header-content d-flex jus-cont-center padd-30">
+				<div class="outer txt-center ">
+					<div class="inner">
+						<h1 class="heading-1">resturant</h1>
+						<div class="divider-1"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</header>
+
+    <section class="food-menu txt-center padd-60">
+    
+              <div class="container">
+        <h2 class="heading-2"> Food Menu.</h2>
+                        <div class="divider-2">
+            <span class="line"></span>
+            <span class="square"></span>
+            <span class="line"></span>
+        </div>
+        <p class="text-1">Plusieurs variations de Lorem Ipsum peuvent être trouvées </p>
+
+                <div class="menu d-flex jus-cont-space-between padd-60">
+        	{% for food in site.data.food.vg-food %}
+        	<div class="item">
+        		<div class="food-img"><img class="img-fluid img-thumbnail " src="{{site.baseurl}}/{{food.img}}"></div>
+        		<div class="food-about">
+        			<h4 class="heading-3">{{food.name}}</h4>
+        			<p class="text-1">{{food.abt}}</p>
+        		</div>
+        		<p class="food-price">{{food.price}}</p>
+        	</div>
+        	{% endfor %}
+        	
+        </div>
+        </div>
+
+                      <div class="container">
+        <h2 class="heading-2"> Drinks Menu.</h2>
+                        <div class="divider-2">
+            <span class="line"></span>
+            <span class="square"></span>
+            <span class="line"></span>
+        </div>
+        <p class="text-1">Plusieurs variations de Lorem Ipsum peuvent être trouvées </p>
+
+                <div class="menu d-flex jus-cont-space-between padd-60">
+        	{% for drink in site.data.food.drinks %}
+        	<div class="item">
+        		<div class="food-img"><img class="img-fluid img-thumbnail" src="{{site.baseurl}}/{{drink.img}}"></div>
+        		<div class="food-about">
+        			<h4 class="heading-3">{{drink.name}}</h4>
+        			<p class="text-1">{{drink.abt}}</p>
+        		</div>
+        		<p class="food-price">{{drink.price}}</p>
+        	</div>
+        	{% endfor %}
+        	
+        </div>
+        </div>
+
+
+                              <div class="container">
+        <h2 class="heading-2"> Supplements Menu.</h2>
+                        <div class="divider-2">
+            <span class="line"></span>
+            <span class="square"></span>
+            <span class="line"></span>
+        </div>
+        <p class="text-1">Plusieurs variations de Lorem Ipsum peuvent être trouvées </p>
+
+                <div class="menu d-flex jus-cont-space-between padd-60">
+        	{% for drink in site.data.food.s-food %}
+        	<div class="item">
+        		<div class="food-img"><img class="img-fluid img-thumbnail" src="{{site.baseurl}}/{{drink.img}}"></div>
+        		<div class="food-about">
+        			<h4 class="heading-3">{{drink.name}}</h4>
+        			<p class="text-1">{{drink.abt}}</p>
+        		</div>
+        		<p class="food-price">{{drink.price}}</p>
+        	</div>
+        	{% endfor %}
+        	
+        </div>
+        </div>
+     </section>

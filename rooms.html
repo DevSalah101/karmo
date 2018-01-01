@@ -1,0 +1,77 @@
+---
+layout: default
+permalink: /rooms/
+---
+<header id="rooms">
+	<div class="header-overlay">
+		<div class="container">
+			{% include navbar.html %}
+			<div class="header-content d-flex jus-cont-center padd-30">
+				<div class="outer txt-center ">
+					<div class="inner">
+						<h1 class="heading-1">Rooms</h1>
+						<div class="divider-1"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</header>
+
+    <section class="rooms padd-60 txt-center">
+      <div class="container">
+        <h2 class="heading-2">Best Stay With Our Luxurious Rooms</h2>
+                        <div class="divider-2">
+            <span class="line"></span>
+            <span class="square"></span>
+            <span class="line"></span>
+        </div>
+        <p class="text-1">Plusieurs variations de Lorem Ipsum peuvent être trouvées ici ou là, mais la majeure partie d'entre <br>elles a été altérée par l'addition d'humour</p>
+
+        <div class="rooms-filter">
+          <p><i class="icon icon-menu"></i>  Filter Rooms By</p>
+          <form action="#" method="method">
+            <div class="input-group">
+              <input type="text" placeholder="Room Type"/><i class="icon icon-sort-down"></i>
+            </div>
+            <div class="input-group">
+              <input type="text" placeholder="Number Of Beds"/><i class="icon icon-sort-down"></i>
+            </div>
+            <div class="input-group">
+              <input type="text" placeholder="Price"/><i class="icon icon-sort-down"></i>
+            </div>
+          </form>
+        </div>
+
+        <div class="rooms-items">
+		{% for room in  site.data.rooms.rooms%}
+		<div class="rooms-items-item">
+                  <div class="room-photo"><img class="img-fluid" src="{{site.baseurl}}/{{room.img}}" alt="alt"/>
+                    <div class="on-hover">
+                      <h2 class="heading-2">{{room.type}}</h2>
+                                                  <p class="stars">
+                                    {% for star in site.data.home.rate %}
+                                    <i class="{{star.icon}}"></i>
+                                {% endfor %}
+                            </p>
+                    </div>
+                  </div>
+                  <div class="room-type d-flex jus-cont-space-between">
+                    <h3 class="heading-3">{{room.price}}</h3>
+                    <a href="{{site.baseurl}}/rooms/room-single/">View Details</a>
+                  </div>
+                </div>
+		{% endfor %}
+        </div>
+
+                <div class="pagination"><i class="icon icon-left-open-big"></i>
+          <p class="active">1</p>
+          <p>2</p>
+          <p>3</p>
+          <p>4</p>
+          <p>5</p><i class="icon icon-right-open-big"></i>
+        </div>
+        </div>
+     </section>
+

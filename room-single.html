@@ -1,0 +1,129 @@
+---
+layout: default
+permalink: /rooms/room-single/
+---
+<header id="room-single">
+	<div class="header-overlay">
+		<div class="container">
+			{% include navbar.html %}
+			<div class="header-content d-flex jus-cont-center padd-30">
+				<div class="outer txt-center ">
+					<div class="inner">
+						<h1 class="heading-1">Rooms</h1>
+						<div class="divider-1"></div>
+						<p>Rooms / Kings Room</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</header>
+
+    <section class="room-info padd-60">
+      <div class="container">
+        <h2 class="heading-2">Single Room</h2>
+        <div class="items padd-30">
+          <div class="left">
+            <div class="room-photo"><img  class="img-fluid" src="{{site.baseurl}}/assets/images/rooms/room-single/01.jpg" alt="alt"/>
+              <div class="pager">
+                <div class="next"><i class="icon icon-left-open-big"></i></div>
+                <div class="prev"><i class="icon icon-right-open-big"></i></div>
+              </div>
+            </div>
+            <div class="room-f">
+              <div><span>Price</span>
+                <h2 class="heading-2">$99 <span> Per Night</span></h2>
+              </div>
+              <div><span>Rating</span>
+                                                  <p class="stars">
+                                    {% for star in site.data.home.rate %}
+                                    <i class="{{star.icon}}"></i>
+                                {% endfor %}
+                            </p>
+              </div>
+              <div>
+                <button class="btn btn-primary" type="submit">Book Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="right">
+            <h3 class="heading-3">About Room</h3>
+            <p class="text-1">Plusieurs variations de Lorem Ipsum peuvent être trouvées ici ou là, mais la majeure partie d'entre elles a été altérée par l'addition.</p>
+            <h3 class="heading-3">Services</h3>
+            <ul>
+              <li><i class="icon icon-fast-food"></i> <span> food</span></li>
+              <li><i class="icon icon-signal"></i>  <span> Wifi</span></li>
+              <li><i class="icon icon-bed"></i>  <span> bed</span></li>
+              <li><i class="icon icon-taxi"></i> <span> Taxi</span></li>
+              <li><i class="icon icon-bath"></i> <span> Water</span></li>
+              <li><i class="icon icon-star"></i> <span> Ac</span></li>
+              <li><i class="icon icon-television"></i> <span> Tv</span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="details">
+          <div class="left">
+            <h3 class="heading-3">Details</h3>
+            <p class="text-1">Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un peintre anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié.</p>
+            <ul>
+              <li><i class="icon icon-right-open-mini"></i> simplement du faux texte employé</li>
+              <li><i class="icon icon-right-open-mini"></i>  la mise en page avant</li>
+              <li><i class="icon icon-right-open-mini"></i>  le faux texte standard de l'imprimerie </li>
+            </ul>
+          </div>
+          <div class="right">
+            <div class="a-video txt-center">
+            	<img class="img-fluid img-thumbnail " src="{{site.baseurl}}/assets/images/rooms/room-single/02.jpg" alt="alt"/>
+                          <div class="overlay d-flex">
+                <i class="icon icon-play-outline" aria-hidden="true"></i>
+                <h3 class="heading-3">Watch Now</h3>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container txt-center padd-60">
+        <h3 class="heading-2">Other Similar Rooms</h3>
+                                <div class="divider-2">
+            <span class="line"></span>
+            <span class="square"></span>
+            <span class="line"></span>
+        </div>
+        <div class="rooms-items padd-30">
+                <div class="rooms-items-item">
+                  <div class="room-photo"><img class="img-fluid" src="{{site.baseurl}}/assets/images/rooms/01.jpg" alt="alt"/>
+                    <div class="on-hover">
+                      <h4 class="heading-3">$100</h4><small>Per Night</small><a href="">
+                        <button class="btn btn-primary" type="submit">View Details</button></a>
+                    </div>
+                  </div>
+                  <div class="room-type">
+                    <h3 class="heading-3">Single Room</h3>
+                  </div>
+                </div>
+                <div class="rooms-items-item">
+                  <div class="room-photo"><img class="img-fluid" src="{{site.baseurl}}/assets/images/rooms/06.jpg" alt="alt"/>
+                    <div class="on-hover">
+                      <h4 class="heading-3"></h4><small>Per Night</small><a href="">
+                        <button class="btn btn-primary" type="submit">View Details</button></a>
+                    </div>
+                  </div>
+                  <div class="room-type">
+                    <h3 class="heading-3">Deluxe Room</h3>
+                  </div>
+                </div>
+                <div class="rooms-items-item">
+                  <div class="room-photo"><img class="img-fluid" src="{{site.baseurl}}/assets/images/rooms/07.jpg" alt="alt"/>
+                    <div class="on-hover">
+                      <h4 class="heading-3"></h4><small>Per Night</small><a href="">
+                        <button class="btn btn-primary" type="submit">View Details</button></a>
+                    </div>
+                  </div>
+                  <div class="room-type">
+                    <h3 class="heading-3">Luxury Room</h3>
+                  </div>
+                </div>
+        </div>
+      </div>
+    </section>

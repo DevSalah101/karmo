@@ -1,0 +1,243 @@
+---
+layout: default
+permalink: /
+---
+<header id="header">
+	<div class="fullscreen-video-wrap">
+		<video  poster="/assets/images/about/01.jpg" autoplay loop preload >
+                    <source src="assets/video/bgg.mp4" type="video/mp4">
+		</video>
+	</div>
+	
+    {% include navbar.html %}
+	<div class="header-overlay">
+		<div class="container">
+			
+			<div class="header-content d-flex">
+				<div class=" txt-center ">
+					<div class="">
+											<p>
+						{% for star in  (1..5)%}
+						<i class="icon icon-star-empty"></i>
+						{% endfor %}
+						<span>START LUXURY HOTEL</span>
+					</p>
+					<h1 class="heading-1 padd-15">Welcome To Karmo Hotel</h1>
+					<div class="btns">
+						<button class="btn btn-borderd">Know More</button>
+						<button class="btn btn-primary">Book Now</button>
+					</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</header>
+
+<!-- Start Featurd Rooms -->
+<section id="featurd-rooms" class="txt-center padd-60">
+    <div class="container">
+        <h2 class="heading-2">{{site.data.home.r-heading}}</h2>
+        <div class="divider-2">
+            <span class="line"></span>
+            <span class="square"></span>
+            <span class="line"></span>
+        </div>
+        <p class="text-1">{{site.data.home.r-paragraph}}</p>
+
+        <div class="row marg-60 jus-cont-space-between">
+            {% for item in site.data.home.room %}
+            <figure class="room">
+
+                <div class="placeholder">
+                        <img class="img-fluid" src="{{item.photo}}" alt="{{item.type}}">
+                        <div class="overlay">
+                            <h4 class="price-tag">{{item.price}}</h4>
+                            <p class="stars">
+                                    {% for star in site.data.home.rate %}
+                                    <i class="{{star.icon}}"></i>
+                                {% endfor %}
+                            </p>
+
+                            
+                        </div>
+                        
+                </div>
+
+
+                <figcaption class="room-info padd-30">
+                    <h3 class="heading-3">{{item.type}}</h3>
+                    <p class="text-1 marg-15">{{item.desc}}</p>
+
+                    <ul class="d-flex jus-cont-space-arround">
+                        {% for service in site.data.home.service %}
+                            <li><span class="{{service.icon}}"></span> <p class="text-1">{{service.name}}</p></li>
+                        {% endfor %}
+                    </ul>
+
+                    <a href="./rooms/room-single/"><button class="btn btn-normal">View Details</button></a>
+                </figcaption>
+
+            </figure>
+            {% endfor %}
+
+        </div>
+
+        <div class="pager">
+            <span class="bar active"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+
+
+    </div>
+</section>
+<!-- End Featurd Rooms -->
+
+
+<!-- Start About Us  -->
+<section id="h-about" class="txt-center padd-60">
+    <div class="container">
+
+        <h2 class="heading-2">{{site.data.home.a-heading}}</h2>
+        <div class="divider-2">
+            <span class="line"></span>
+            <span class="square"></span>
+            <span class="line"></span>
+        </div>
+        <p class="text-1">{{site.data.home.a-paragraph}}</p>
+
+        <div class="a-video marg-60">
+            <img class="img-fluid img-thumbnail" src="{{site.data.home.video-img}}" alt="video">
+            <div class="overlay d-flex">
+                <i class="icon icon-play-outline" aria-hidden="true"></i>
+                <h3 class="heading-3">Watch Now</h3>
+            </div>
+        </div>
+
+        <button class="btn btn-primary">Know More</button>
+
+    </div>
+</section>
+<!-- End About Us  -->
+
+<!-- Start Services  -->
+<section id="h-services" class="txt-center padd-60">
+    <div class="container">
+
+            <h2 class="heading-2">{{site.data.home.s-heading}}</h2>
+            <div class="divider-2">
+                <span class="line"></span>
+                <span class="square"></span>
+                <span class="line"></span>
+            </div>
+
+            <div class="row marg-60">
+
+                <div class="left txt-left">
+                    <ul>
+                        {% for item in site.data.home.left %}
+                            <li class="{{item.class}}"><i class="{{item.icon}}"></i> {{item.name}}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+
+                <div class="right">
+                    <figure>
+                        <img class="img-fluid" src="assets/images/services/02.jpg" alt="Restaurants &amp; Cafe">
+                        <figcaption>
+                            <h3 class="heading-3">Restaurants &amp; Cafe</h3>
+                            <p class="text-1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum totam doloribus quia, voluptas provident aut quas ratione expedita odit eum, magnam ab quasi? Autem, velit vero. Laboriosam eius tempora fugit.</p>
+                        </figcaption>
+                    </figure>
+                </div>
+
+            </div>
+
+    </div>
+</section>
+<!-- End Services  -->
+
+<!-- Start Activities -->
+<section id="h-activities" class="txt-center padd-60">
+    <div class="container">
+
+        <h2 class="heading-2">{{site.data.home.ac-heading}}</h2>
+        <div class="divider-2">
+            <span class="line"></span>
+            <span class="square"></span>
+            <span class="line"></span>
+        </div>
+        <p class="text-1">{{site.data.home.ac-paragraph}}</p>
+
+        <div class="row marg-60 jus-cont-space-between">
+            {% for item in site.data.home.items %}
+            <div class="a-item">
+                <img class="img-fluid img-thumbnail" src="{{item.img}}" alt="{{item.name}}">
+                <h3 class="heading-3">{{item.name}}</h3>
+            </div>
+            {% endfor %}
+        </div>
+        <div class="pager">
+            <span class="bar active"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </div>
+</section>
+<!-- End Activities -->
+
+<!-- Start Instagram Feed -->
+<section id="feed" class="txt-center padd-60">
+    <div class="container-fluid">
+
+        <h2 class="heading-2">{{site.data.home.f-heading}}</h2>
+        <div class="divider-2">
+            <span class="line"></span>
+            <span class="square"></span>
+            <span class="line"></span>
+        </div>
+        <p class="text-1">{{site.data.home.f-paragraph}}</p>
+
+        <div class="row padd-30">
+            {% for item in site.data.home.photo %}
+                <div class="photo">
+                    <img class="img-fluid" src="{{item.photo}}" alt="{{item.name}}">
+                </div>
+            {% endfor %}
+            <div class="arrow">
+                <div class="left"><i class="icon icon-left-open-big"></i></div>
+                <div class="right"><i class="icon icon-right-open-big"></i></div>
+            </div>
+        </div>
+
+    </div>
+</section>
+<!-- End Instagram Feed -->
+
+<!-- Start Contact -->
+<section id="h-contact" class="txt-center padd-60">
+    <div class="container">
+
+        <h2 class="heading-2">{{site.data.home.c-heading}}</h2>
+        <div class="divider-2">
+            <span class="line"></span>
+            <span class="square"></span>
+            <span class="line"></span>
+        </div>
+        <p class="text-1">{{site.data.home.c-paragraph}}</p>
+
+        <div class="row marg-60 jus-cont-space-between">
+            {% for item in site.data.home.info %}
+            <div class="item">
+                <i class="{{item.icon}}"></i>
+                <h4 class="heading-4">{{item.name}}</h4>
+                <p class="text-1">{{item.text}}</p>
+            </div>
+            {% endfor %}
+        </div>
+
+    </div>
+</section>
+<!-- End Contact  -->

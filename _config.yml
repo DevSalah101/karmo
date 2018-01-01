@@ -1,0 +1,15 @@
+baseurl: /karmo
+social-media:
+  - {name: facebook, icon: "icon icon-facebook"}
+  - {name: instagram, icon: "icon icon-instagram"}
+  - {name: twitter, icon: "icon icon-twitter"}
+  - {name: youtube, icon: "icon icon-youtube-play"}
+  
+exclude:
+  - package.json
+  - gulpfile.js
+  - package-lock.json
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - README.md

@@ -1,0 +1,33 @@
+vg-food:
+  - {img: "assets/images/food/01.jpg", name: "Breakfast Sandwich", price: "$3.49", abt: "Tomato soup with croutons, small ceasar salad, apple juice"}
+  - {img: "assets/images/food/02.jpg", name: "Pepper Bacon Cheeseburger", price: "$5.99", abt: "Tomato soup with croutons, small ceasar salad, apple juice"}
+  - {img: "assets/images/food/03.jpg", name: "The Bacon Cheesy", price: "$6.99", abt: "Tomato soup with croutons, small ceasar salad, apple juice"}
+  - {img: "assets/images/food/04.jpg", name: "BBQ Bacon Burger 54", price: "$7.99", abt: "Tomato soup with croutons, small ceasar salad, apple juice"}
+  - {img: "assets/images/food/05.jpg", name: "Kids Fountain Beverage", price: "$1.50", abt: "Tomato soup with croutons, small ceasar salad, apple juice"}
+  - {img: "assets/images/food/06.jpg", name: "Kids Chocolate Milk", price: "$5.49", abt: "Tomato soup with croutons, small ceasar salad, apple juice"}
+  - {img: "assets/images/food/07.jpg", name: "Kids Strawberry Shake", price: "$6.10", abt: "Tomato soup with croutons, small ceasar salad, apple juice"}
+  - {img: "assets/images/food/08.jpg", name: "Mediterranean Chicken", price: "$5.29", abt: "Tomato soup with croutons, small ceasar salad, apple juice"}
+  - {img: "assets/images/food/09.jpg", name: "The Greek", price: "$10.68", abt: "Tomato soup with croutons, small ceasar salad, apple juice"}
+  - {img: "assets/images/food/10.jpg", name: "Chicken Parmesan", price: "$15.05", abt: "Tomato soup with croutons, small ceasar salad, apple juice"}
+
+drinks:
+  - {img: "assets/images/food/19.jpg", name: "Soft Drink", price: "$8.90", abt: "Tomato soup with croutons, small ceasar salad, apple juice"}
+  - {img: "assets/images/food/20.jpg", name: "Vitamin Water", price: "$1.89", abt: "Tomato soup with croutons, small ceasar salad, apple juice"}
+  - {img: "assets/images/food/21.jpg", name: "Dasani Water", price: "$10.00", abt: "Tomato soup with croutons, small ceasar salad, apple juice"}
+  - {img: "assets/images/food/22.jpg", name: "Kids Honey Ham", price: "$12.03", abt: "Tomato soup with croutons, small ceasar salad, apple juice"}
+  - {img: "assets/images/food/23.jpg", name: "Brownie Combo", price: "$15.01", abt: "Tomato soup with croutons, small ceasar salad, apple juice"}
+  - {img: "assets/images/food/24.jpg", name: "Deluxe Platter", price: "$30.20", abt: "Tomato soup with croutons, small ceasar salad, apple juice"}
+  - {img: "assets/images/food/25.jpg", name: "Brownies Platter", price: "$20.12", abt: "Tomato soup with croutons, small ceasar salad, apple juice"}
+  - {img: "assets/images/food/26.jpg", name: "slated Fried", price: "$89", abt: "Tomato soup with croutons, small ceasar salad, apple juice"}
+  - {img: "assets/images/food/27.jpg", name: "slated Fried", price: "$89", abt: "Tomato soup with croutons, small ceasar salad, apple juice"}
+  - {img: "assets/images/food/28.jpg", name: "slated Fried", price: "$89", abt: "Tomato soup with croutons, small ceasar salad, apple juice"}
+
+s-food:
+  - {img: "assets/images/food/11.jpg", name: "French Fries Basket ", price: "$6.30", abt: "Tomato soup with croutons, small ceasar salad, apple juice"}
+  - {img: "assets/images/food/12.jpg", name: "Turkey Chili Bowl", price: "$7.99", abt: "Tomato soup with croutons, small ceasar salad, apple juice"}
+  - {img: "assets/images/food/13.jpg", name: "Super Burger Bowl Tuna", price: "$8.49", abt: "Tomato soup with croutons, small ceasar salad, apple juice"}
+  - {img: "assets/images/food/14.jpg", name: "Strawberry Short Cake", price: "$3.90", abt: "Tomato soup with croutons, small ceasar salad, apple juice"}
+  - {img: "assets/images/food/15.jpg", name: "Vanilla Bean Milkshake", price: "$10.29", abt: "Tomato soup with croutons, small ceasar salad, apple juice"}
+  - {img: "assets/images/food/16.jpg", name: "Double Chocolate Chip Cookie", price: "$22.05", abt: "Tomato soup with croutons, small ceasar salad, apple juice"}
+  - {img: "assets/images/food/17.jpg", name: "Cheesy Sliders", price: "$6.10", abt: "Tomato soup with croutons, small ceasar salad, apple juice"}
+  - {img: "assets/images/food/18.jpg", name: "White Chocolate Cookies", price: "$12.03", abt: "Tomato soup with croutons, small ceasar salad, apple juice"}

@@ -1,0 +1,93 @@
+#--------------------
+#--- Global Settings
+
+#Site
+sitename: "Karmo Hotel"
+
+#--------------------
+#--- Navbar
+
+# menu
+menu:
+  - {name: "home", url: "", active: "active"}
+  - {name: "about", url: "about/"}
+  - {name: "rooms", url: "rooms/"}
+  - {name: "restaurant", url: "restaurant/"}
+  - {name: "contact", url: "contact/"}
+
+#--------------------
+#--- Home
+
+# Featured Rooms Section
+r-heading: "Featured Rooms"
+r-paragraph: "Placeat atque maxime Sed rerum maiores tenetur asperiores impedit."
+
+room:
+  - {photo: 'assets/images/rooms/01.jpg', type: "Single Room", price: "$99", desc: "Ratione aut minima dignissimos ut."}
+  - {photo: 'assets/images/rooms/02.jpg', type: "Deluxe Room", price: "$150", desc: "Ratione aut minima dignissimos ut."}
+  - {photo: 'assets/images/rooms/03.jpg', type: "Luxury Room", price: "$250", desc: "Ratione aut minima dignissimos ut."}
+
+rate:
+  - {icon: "icon icon-star-4", type: "top"}
+  - {icon: "icon icon-star-4", type: "top"}
+  - {icon: "icon icon-star-4", type: "top"}
+  - {icon: "icon icon-star-4", type: "top"}
+  - {icon: "icon icon-star-half-alt", type: "top"}
+
+service:
+  - {icon: "icon icon-bed", name: "2 beds"}
+  - {icon: "icon icon-signal", name: "wifi"}
+  - {icon: "icon icon-bath", name: "Bath"}
+  - {icon: "icon icon-food", name: "Dinner"}
+
+  # About Us
+a-heading: "About Us"
+a-paragraph: "Placeat atque maxime Sed rerum maiores tenetur asperiores impedit."
+
+video-img: "assets/images/about/01.jpg" 
+
+# Service
+s-heading: "What We Offer ?"
+
+left:
+  - {icon: "icon icon-fast-food", name: "Restaurants & Cafe", class: "active"}
+  - {icon: "icon icon-heart", name: "Gyms & Trainigs", class: " "}
+  - {icon: "icon icon-leaf", name: "Spa & Sauna", class: " "}
+  - {icon: "icon icon-swimming", name: "Swimming Pool", class: " "}
+
+# Activities
+ac-heading: "Activities"
+ac-paragraph: "Placeat atque maxime Sed rerum maiores tenetur asperiores impedit."
+
+items:
+  - {img: "assets/images/activities/01.jpg", name: "rafting"}
+  - {img: "assets/images/activities/02.jpg", name: "Balloon Ride"}
+  - {img: "assets/images/activities/03.jpg", name: "Trekking"}
+  - {img: "assets/images/activities/04.jpg", name: "Rock Climbing"}
+
+# Instagram
+f-heading: "Instagram Feeds"
+f-paragraph: "Placeat atque maxime Sed rerum maiores tenetur asperiores impedit."
+
+photo:
+  - {photo: "assets/images/instagram/01.jpg", name: "01"}
+  - {photo: "assets/images/instagram/02.jpg", name: "02"}
+  - {photo: "assets/images/instagram/03.jpg", name: "03"}
+  - {photo: "assets/images/instagram/04.jpg", name: "04"}
+  - {photo: "assets/images/instagram/05.jpg", name: "05"}
+
+  # Contact
+c-heading: "Keep In Touch"
+c-paragraph: "Placeat atque maxime Sed rerum maiores tenetur asperiores impedit."
+
+info:
+  - {icon: "icon icon-location", name: "Address", text: "44492 Forrest Crest"}
+  - {icon: "icon icon-phone", name: "Phone", text: "480.910.6298"}
+  - {icon: "icon icon-mail", name: "Email", text: "info@karmo.com"}
+  - {icon: "icon icon-globe", name: "Website", text: "www.karmohotel.com"}
+
+social-media:
+  - {icon: "icon icon-facebook"}
+  - {icon: "icon icon-twitter"}
+  - {icon: "icon icon-instagram"}
+  - {icon: "icon icon-youtube"}

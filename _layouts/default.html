@@ -1,0 +1,21 @@
+---
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Karmo Hotel : {{page.url | remove: "/"}}</title>
+	<link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900" rel="stylesheet"> 
+	<link rel="stylesheet" href="{{site.baseurl}}/assets/css/all.css">
+</head>
+<body>
+	
+	{{content}}
+
+	{% include footer.html %}
+
+	<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAP1Wn56zdQfr4RRKNUbxcODiCkf66jSrk&callback=initMap">
+    	</script>
+</body>
+</html>
